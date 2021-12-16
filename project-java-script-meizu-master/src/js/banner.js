@@ -5,18 +5,21 @@ let imgBox = document.querySelector('.imgBox')
 let pic = imgBox.children
 //获取切换小圆圈的盒子
 let pointBox = document.querySelector('.pointBox')
-
+//动态创建小圆圈按钮，并给第一个按钮设置背景
 function setBtn(){
+    //遍历创建li
     for(let i = 0; i < pic.length; i++){
         let li = document.createElement('li')
         pointBox.appendChild(li)
     }
+    //给第一个小圆圈设置背景
     pointBox.children[0].className = 'active'
-    var first = pic[0].cloneNode(true)
+    //把第一张图片复制一张给最后面 表示不仅复制了li标记，还把它里面的图片复制了
+    let first = pic[0].cloneNode(true)
     imgBox.appendChild(first)
 }
 setBtn()
-//自动轮播
+//点击小按钮切换图片
 picSwitching()
 function picSwitching(){
     for(let i = 0; i< pointBox.children.length; i++){
@@ -30,7 +33,7 @@ function picSwitching(){
             num = index
             circle = index
             //让按钮背景颜色改变，做排他
-            for(var j = 0; j < pointBox.children.length; j++){
+            for(let j = 0; j < pointBox.children.length; j++){
                  pointBox.children[j].className = ''
             }
             this.className = 'active'
@@ -45,13 +48,13 @@ function animation(ele, target, attr, callback) {
     clearInterval(ele.timer)
     ele.timer = setInterval(function () {
         //开始位置  width:200px  200px + 10px  210px + 10px
-        var begin = parseFloat(getStyle(ele, attr))
+        let begin = parseFloat(getStyle(ele, attr))
         //步长
-        var step = (target - begin) / 10
+        let step = (target - begin) / 10
         //判断
         step = step > 0 ? Math.ceil(step) : Math.floor(step)
         //赋值结果
-        var res = begin + step
+        let res = begin + step
         //给元素进行赋值操作
         ele.style[attr] = res + 'px'
         //清除下定时器
@@ -78,13 +81,16 @@ let flag = true
 //自动轮播
 auto()
 function auto(){
+    //绑定定时器
     timer = setInterval(function(){
         if(flag){
             flag = false
             num++
+             //当我们点击自增到最后一张的时候，条件满足进入判断体直接拉回到第一张了，所以下面的动画是没有执行的
             animation(imgBox, -pic[0].offsetWidth*num,'left',function(){
                 if(num == pic.length - 1){
                     num = 0
+                    //一瞬间把它拉回第一张图片
                     imgBox.style.left = 0
                 }
                 flag = true
