@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>登录</title>
+  <style>
+      .icon {
+          /*width: 1em;*/
+          height: 28px;
+          vertical-align: -0.15em;
+          fill: currentColor;
+          overflow: hidden;
+      }
+  </style>
+  <link rel="stylesheet" href="./css/login.css">
+  <script src="./vendor/iconfont/iconfont.js"></script>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <!--字体图标-->
+      <a href="index.html">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-meizu1"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="mainBody">
+    <div>
+      <h2>账户登录</h2>
+      <form action="" id="form">
+        <input type="text" placeholder="账户" id="user">
+        <input type="password" placeholder="密码" id="password"><br>
+        <input type="submit" value="登录">
+      </form>
+      <a href="register.html">注册</a>
+      <span>忘记密码？</span>
+    </div>
+  </div>
+</body>
+<script src="./js/UserList.js"></script>
+<script src="./js/login.js"></script>
+</html>

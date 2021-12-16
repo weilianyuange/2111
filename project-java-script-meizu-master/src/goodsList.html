@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>商品列表</title>
+  <link rel="stylesheet" href="./css/goodsList.css">
+  <script src="vendor/jQurey/jquery.js"></script>
+  <style>
+      .icon {
+          /*width: 1em;*/
+          height: 28px;
+          vertical-align: -0.15em;
+          fill: currentColor;
+          overflow: hidden;
+      }
+  </style>
+  <script src="./vendor/iconfont/iconfont.js"></script>
+</head>
+<body>
+<header>
+  <div>
+    <div>
+      <!--字体图标-->
+      <a href="index.html">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-meizu1"></use>
+        </svg>
+      </a>
+    </div>
+    <ul id="ul">
+      <li id="phone">手机</li>
+      <li id="Lipro">Lipro</li>
+      <li id="sound">声学</li>
+      <li id="peijian">配件</li>
+      <li>PANDAER</li>
+      <li>Flyme</li>
+      <li>服务</li>
+      <li>社区</li>
+      <li>企业服务</li>
+      <li>APP下载</li>
+    </ul>
+    <div class="search">
+      <input type="text" placeholder="魅族18">
+      <span></span>
+    </div>
+    <div class="user">
+      <img src="./img/icon/user.png" alt="#">
+      <div>
+        <p id="hello"><a href="login.html">立即登录</a></p>
+        <p><a href="register.html">立即注册</a></p>
+        <p id="exit"><a href="#" onclick="exit1()">退出登录</a></p>
+      </div>
+    </div>
+    <div class="shoppingCar">
+      <a href="shoppingCar.html">
+        <img src="./img/icon/shoppingcar.png" alt="">
+      </a>
+    </div>
+  </div>
+</header>
+<div class="banner">
+  <img src="./img/img3.jpg" alt="">
+</div>
+<div class="list">
+  <div class="heart">
+    <h1 class="tittle">手机</h1>
+    <div class="button">
+      <p class="active" id="recommend">推荐</p>
+      <p id="price">价格</p>
+    </div>
+    <div class="goodsList"></div>
+  </div>
+</div>
+<div class="footer">
+  <div class="heart">
+    <p>周一至周日 8:00-20:00</p>
+    <div>
+      <div>
+        <a><img src="./img/icon/img-icon1.png" alt=""><span>满80免运费</span></a>
+        <a><img src="./img/icon/img-icon2.png" alt=""><span>100+城市次日送达</span></a>
+        <a><img src="./img/icon/img-icon3.png" alt=""><span>7天无理由退货</span></a>
+        <a><img src="./img/icon/img-icon4.png" alt=""><span>15天换货保障</span></a>
+        <a><img src="./img/icon/img-icon5.png" alt=""><span>1年免费保修</span></a>
+        <a><img src="./img/icon/img-icon6.png" alt=""><span>上门快修</span></a>
+      </div>
+      <div>
+        <!--          -->
+        <p>400-788-3333</p>
+        <button>在线客服</button>
+      </div>
+    </div>
+    <hr>
+    <ul>
+      <li><a href="">了解魅族</a></li>
+      <li><a href="">加入我们</a></li>
+      <li><a href="">联系我们</a></li>
+      <li><a href="">天猫旗舰店</a></li>
+      <li><a href="">问题反馈</a></li>
+      <li><a href="">线上销售授权名单公示</a></li>
+      <li><a href="">出版物经营许可证</a></li>
+      <li><a href="">涉未成年人网络有害信息举报(12377)</a></li>
+      <li><a href="">网络违法违规人员举报</a></li>
+      <li><a href="">简体中文</a></li>
+    </ul>
+    <ul class="second">
+      <li>©2021 Meizu Telecom Equipment Co., Ltd. All rights reserved.</li>
+      <li><a href="">粤ICP备13003602号</a></li>
+      <li><a href="">合字B2-20170010 </a></li>
+      <li><a href="">营业执照</a></li>
+      <li><a href="">法律声明</a></li>
+      <li><a href=""><img src="" alt=""><span>粤公网安备 44049102496009 号</span></a></li>
+    </ul>
+    <div class="last">
+      <ul>
+        <li><img src="./img/icon/code1.png" alt=""></li>
+        <li><img src="./img/icon/code2.jpg" alt=""></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script src="./js/goodsList.js"></script>
+<script src="./js/UserList.js"></script>
+
+</body>
+</html>

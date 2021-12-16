@@ -1,0 +1,57 @@
+.header{
+    width: 100%;
+    height: 68px;
+}
+.mainBody{
+    background-image: url('../img/pic-flyme.png');
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 750px;
+    position: relative;
+
+}
+.mainBody>div{
+    width: 300px;
+    position: absolute;
+    z-index: 19;
+    top: 17%;
+    right: 150px;
+    padding: 35px 35px 10px;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0 0 10px #c0c0c0;
+
+}
+.mainBody>div>h2{
+    font-weight: normal;
+    font-size: 24px;
+    width: 100%;
+}
+form{
+    width: 100%;
+}
+form>input{
+    width: 180px;
+    height: 25px;
+    margin: 20px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 0 5px #c0c0c0;
+}
+form>input:nth-of-type(3){
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #008cff;
+}
+input:focus{
+    outline: medium;
+}
+a,span{
+    display: inline-block;
+    text-decoration: none;
+    color: #008cff;
+    background-color: #fff;
+    margin: 0 30px;
+}

@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>魅族首页</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./vendor/iconfont/iconfont.js"></script>
+  <script src="vendor/jQurey/jquery.js"></script>
+  <style>
+      .icon {
+        /*width: 1em;*/
+        height: 28px;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <div>
+        <!--字体图标-->
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-meizu1"></use>
+          </svg>
+        </a>
+      </div>
+      <ul>
+        <li>
+          手机
+          <ul class="menu-phone">
+            <li>
+              <img src="https://openfile.meizu.com/group1/M00/08/C6/Cgbj0GFD_OWAbnQ-AAnrj3u6JUw104.png" alt="">
+              <p>魅族 18X</p>
+              <span>￥2599</span>
+            </li>
+            <li>
+              <img src="https://openfile.meizu.com/group1/M00/08/C6/Cgbj0GFD_OWAbnQ-AAnrj3u6JUw104.png" alt="">
+              <p>魅族 18X</p>
+              <span>￥2599</span>
+            </li>
+            <li>
+              <img src="https://openfile.meizu.com/group1/M00/08/C9/Cgbj0GFESyaAZqPRAAMWvvh1iJA419.png" alt="">
+              <p>魅族 18s</p>
+              <span>￥3699</span>
+            </li>
+            <li>
+              <img src="https://openfile.meizu.com/group1/M00/08/DC/Cgbj0WFETByAWsR_AAVjlvuU3OQ275.png" alt="">
+              <p>魅族 18s Pro</p>
+              <span>￥4599</span>
+            </li>
+            <li>
+              <img src="https://openfile.meizu.com/group1/M00/08/7B/Cgbj0WA_TmqASi3IAAs2X6gKi1M053.png" alt="">
+              <p>魅族 18</p>
+              <span>￥4399</span>
+            </li>
+            <li>
+              <img src="https://openfile.meizu.com/group1/M00/08/69/Cgbj0GA_TnOAHYZ6AApG3wQY6vI268.png" alt="">
+              <p>魅族 18 Pro</p>
+              <span>￥4999</span>
+            </li>
+            <li>
+              <img src="https://openfile.meizu.com/group1/M00/07/C4/Cgbj0F6zwMuANEeWAAw6yQFAJXM097.png" alt="">
+              <p>魅族 17</p>
+              <span>￥3699</span>
+            </li>
+          </ul>
+        </li>
+        <li>
+          Lipro
+          <ul class="menu-Lipro">
+            <li>
+              <img src="https://openfile.meizu.com/group1/M00/08/44/Cgbj0F_sMhaAPN4-AAFc9KX9YD0536.png" alt="">
+              <p>Lipro LED 智能吸顶灯</p>
+              <span>￥599</span>
+            </li>
+            <li>
+              <img src="https://openfile.meizu.com/group1/M00/08/C3/Cgbj0WDvrH2AVwylAAVKzWHPrvY043.png" alt="">
+              <p>Lipro LED 射灯</p>
+              <span>￥159</span>
+            </li>
+            <li>
+              <img src="https://openfile.meizu.com/group1/M00/08/58/Cgbj0V_sMdSAFKcaAAWUloL8G08561.png" alt="">
+              <p>魅族 Lipro LED 筒灯</p>
+              <span>￥129</span>
+            </li>
+            <li>
+              <img src="https://openfile.meizu.com/group1/M00/08/B8/Cgbj0GEcn4GAcFgHAAeYjmE5-j4958.png" alt="">
+              <p>Lipro LED 灯杯</p>
+              <span>￥98</span>
+            </li>
+            <li>
+              <img src="https://openfile.meizu.com/group1/M00/08/CB/Cgbj0WEcn8OASyTuAARz8jCJdOs215.png" alt="">
+              <p>Lipro LED 金属球泡</p>
+              <span>￥99</span>
+            </li>
+            <li>
+              <img src="https://openfile.meizu.com/group1/M00/08/46/Cgbj0F_0GSaAN9lqAACCdwIBQOc806.jpg" alt="">
+              <p>魅族 Lipro LED 灯泡</p>
+              <span>￥49</span>
+            </li>
+            <li>
+              <img src="https://openfile.meizu.com/group1/M00/08/42/Cgbj0F_sMIOAE-gWAARaOyvWLSE861.png" alt="">
+              <p>魅族 Lipro LED 地脚灯</p>
+              <span>￥99</span>
+            </li>
+          </ul>
+        </li>
+        <li>
+          声学
+          <ul class="menu-sound">
+            <li>
+              <img src="https://openfile.meizu.com/group1/M00/08/D0/Cgbj0WE5p9OAS06fAATJ75w3M74692.png" alt="">
+              <p>【新品】魅蓝 Blus 主动降噪耳机</p>
+              <span>￥199</span>
+            </li>
+            <li>
+              <img src="https://openfile.meizu.com/group1/M00/08/EC/Cgbj0WFNm6CAQWo1AALl7FZKaN4346.png" alt="">
+              <p>【新品】魅蓝 HiFi 解码耳放</p>
+              <span>￥79</span>
+            </li>
+            <li>
+              <img src="https://openfile.meizu.com/group1/M00/08/40/Cgbj0V-JCMSAa5qBAAMth2Y6_gU978.png" alt="">
+              <p>魅族 POP2s 真无线耳机</p>
+              <span>￥299</span>
+            </li>
+            <li>
+              <img src="https://openfile.meizu.com/group1/M00/07/86/Cgbj0V3UocyAR_tJAApbDmCAyEo620.png" alt="">
+              <p>魅族 HD60 头戴式蓝牙耳机</p>
+              <span>￥499</span>
+            </li>
+            <li>
+              <img src="https://openfile.meizu.com/group1/M00/07/E0/Cgbj0V6z8VSAV6kEAAlCc-omYno614.png" alt="">
+              <p>魅族 HD60 降噪耳机</p>
+              <span>￥1099</span>
+            </li>
+            <li>
+              <img src="https://openfile.meizu.com/group1/M00/08/5E/Cgbj0V_38NOAGvEXAAN6WGRLi3Y197.png" alt="">
+              <p>魅族 POP Pro 主动降噪耳机</p>
+              <span>￥499</span>
+            </li>
+            <li>
+              <img src="https://openfile.meizu.com/group1/M00/05/11/Cgbj0Fsp-8yATCDFAASWKnb1fdQ339.png" alt="">
+              <p>POP 真无线蓝牙耳机</p>
+              <span>￥499</span>
+            </li>
+          </ul>
+        </li>
+        <li>配件</li>
+        <li>PANDAER</li>
+        <li>Flyme</li>
+        <li>服务</li>
+        <li>社区</li>
+        <li>企业服务</li>
+        <li>
+          APP下载
+          <div class="app">
+            <img src="./img/img-app.jpg" alt="">
+          </div>
+        </li>
+      </ul>
+      <div class="search">
+        <input type="text" placeholder="魅族18">
+        <span></span>
+      </div>
+      <div class="user">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAALGPC/xhBQAAA4tJREFUaAXtmc9LVUEUx32GIeS2yBCSSCRoIRRItM1cuMnAhbh061po07KFuPM/aBNuKtyIkJtalu1CJQncRNSiSCLRzD5fm4njy3fv3Pfufe8+nANfz9yZ8+N7zhvHuc+OjiixA7EDsQOxA+XtQKUZ1A4PD7vIc8/hJvqSy/sR/QY8FyqVyr6bb19FseNgC6SJbMbbtlLId4K5tCpPWJdPZ9sVfkKx35l7CIZAj4PGmtOalbm2Khjm2sZWVnm4XKsIrQHZWGmP7Q3jLmB/Z1VI6uEoG2CLVgwdduUWSE4AL9qqNT/Z6kpkC+z2nqi2afS5iMNBf368zPOnZts/pGlnO2/sbCwzXaIhn9Am8DKUlRqOOsi8bGb1b7o9THc8W3RPVgLyMf47Wf3T7IvY0mk5W7peRMGfTEX+CmmmUofWx8ZKdQwxKKLgDZP4lhmHDq2PjRXqn2hXRMGrJuOYGYcOrY+NFerfXDsOnAHw2x08e2i7RRPJyBbIR6IYA4kOZVmE6IoYO1kI5YX9gndCr4T6tdwOsqOG+C/GegdOFNkA2XoZTXQo2yKslzxz9Da4UIuj1pwN6kiWatmWdh7a/eDbX/5HP9/x8797teaA1rzIp7+0hSURg/gI2PeVoL+CB+C6g8aa8yLbkaSYpV+jgEmw6ytK0LKZLH1BIQQpZBi8TyhWa8MhsRq1SX0xbzSB96egM4z1Cd4H19z8OvopeMKr4YGbiyp2IHYgdiB2wHcg11Oak/gKge84XEXrOnkenAUhsofRF/AZbIEXAif4B3Q5hCL1ffIYeAWKEsVWjlw/oMwdhMAgeA2aJco1mJloHg4kngY/qirV9fAZmAE3gF7og/97IFvnI1/FUKzqa6lyTudRQ3AMRwb1T34yegQuBgcJNFRMF1s5rMwEhmjMjIxTwH+FIwJrwF8VGwue4K0c4C3wIg5TCS6NL5GgF9h33Jc8n2s8clgE5QLK6UVcesO867Ai+KLPhF4Hmf+zUEfaYy7KCTaAl8VjBnk9EL0PHLgs2k6384qdNY5yA/9rJU59WWOk2hN0FnhZTnUo2AAiy54MejY0XZYv4u+aoI/NuFVDy8FyS+STpWD7BdxaYtTmLFoOlls+2dk29gLQnU/U+qPAp9ts6d3QSMF3UwX3QbnMB/t5nyJ0PZyybOkiODc95qkruOkdjgljB2IHYgdiB2IHYgdiB05NB/4ACa0OHk/GEbwAAAAASUVORK5CYII=" alt="#">
+        <div>
+          <p id="hello"><a href="login.html">立即登录</a></p>
+          <p id="register"><a href="register.html">立即注册</a></p>
+          <p id="exit"><a href="#" onclick="exit1()">退出登录</a></p>
+        </div>
+      </div>
+      <div class="shoppingCar">
+        <a href="shoppingCar.html">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAALGPC/xhBQAAA2JJREFUaAXtmT2LFEEQhnc9PeEUxchE5Q40UcQTXEFBIwUDA0W9xNw/IAYaGBidBuofMNBE8ECRAw3USFBEBcH4/GYxEAW/QPRcn4LupRymZ3dmumd277qgqJrumbfeqq7pnZltNKLECsQKxArECsQKxArUXoFOp3MK/YFmydnaifoiQJZfszI1cy98xasLZ4kKfE/5LncbiU+4JodhvGlJksgI/g50hR1T9hb+KnN8stlsXlRzC8+lGNdNS4t5uPAyTGREklMq4Xn8tYlThuaw29JZjElwJfOf0OXmvNNYafNBkg5k2txu372QIulZtcqD6v6F2E10vStpvUu7zrHjg7ailpe20rGH0bskPaYnrJ8n4Tv2oiGwW+B4LI3n0rTBtDHujY9U7SVzW838FewgPXnJ6t5Adxt+27FXjd81fSdsrpCHE5twiyK0u0g1OyyGJLxB0SjPDdADqBXZIAbm5wkuuywxY+UhqpwANIb+UsDHyyH6uxpOlxSvVy7kPJtWgxb+CdAjBbZf+bW5JCrtfFQRmFF+ORfwM6qSH8qh+bkaPv7b2VIDvKUSFneznavLwqGvdhZ+uVraJPQc+9n4Ympta5IN1842SYLMoFZm7XgdFhLh2tkmRJATNlvsN3SZnavaElu38+sg8QkygWrZEyRQD1AINNH3isiFHpcUnybInAp0rjhS8SuJn7udi2xalqH+BlbXxjVlyWDf8JzwTB37danuEbXCf/BX+42QjUa86tpZqBBwDSqfe6zIe2hlQtBkO7f6CV64pWmfLwTQLVR1Wyfb+WnQhA24vo8PUnX51BtciCM/g/oF39+zcxZ7Ak+iWs5zULhrsmLZOfBH0Ms6KP6kne9l5bGslBBMVnmfApFXM/lLZl6N+XLlg4V8yRhXgLe5vQ6p40zXR8ISXD7Or8uMFGbyHbB7SfhtGHgHKqu8CX2AVin3CTbuoOQcLr3CGhkC8gFtJ7oRlfbzLb8BnEMfs6pPfINHvFiBWIFFVAE2rFF0Gm0bFX/UVwkECw2Gn5unIYP5T6ZzAzkuAFWSTYo3fEdY9zBMZGWTUv7vDhMSYC/4QZ973eWpb8ZnwtdS0kgbSzmtr6E0rLSxvsBKn0TLBd1UQuOXLkAEiBWIFYgViBWIFYgViBVY9BX4BxVsJ5lt9HBwAAAAAElFTkSuQmCC" alt="">
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="banner">
+    <!-- 承载每一个小块的盒子 -->
+    <ul class="imgBox">
+      <li><img src="./img/img1.jpg" alt=""></li>
+      <li><img src="./img/img2.jpg" alt=""></li>
+      <li><img src="./img/img3.jpg" alt=""></li>
+      <li><img src="./img/img4.jpg" alt=""></li>
+      <li><img src="./img/img5.jpg" alt=""></li>
+    </ul>
+    <!-- 承载焦点的小盒子 -->
+    <ol class="pointBox"></ol>
+  </div>
+  <div class="function">
+    <div>
+      <img src="./img/img-fun1.png" alt="">
+      <h2>魅族 18 Pro</h2>
+      <p>立省1000 + 12期免息 + 赠手机壳</p>
+    </div>
+    <div>
+      <img src="./img/img-fun2.jpg" alt="">
+      <h2>POP2s 真无线耳机</h2>
+      <p>限时特惠199元</p>
+    </div>
+    <div>
+      <img src="./img/img-fun3.png" alt="">
+      <h2>渴物众筹</h2>
+      <p>现已开启</p>
+    </div>
+    <div>
+      <img src="./img/img-fun4.jpg" alt="">
+      <h2>mCycle</h2>
+      <p>以旧换新</p>
+    </div>
+  </div>
+  <div class="phone">
+    <h1>手机</h1>
+    <div class="imgBox1"></div>
+    <div class="imgBox2">
+      <div>
+        <h2>魅族 18</h2>
+        <p>限时领券至高立省1000 | 12期免息</p>
+        <p>￥3999起</p>
+        <img src="./img/img-phone2.png" alt="">
+      </div>
+      <div>
+        <h2>魅族 18 Pro</h2>
+        <p>限时领券至高立省1000 | 赠手机壳</p>
+        <p>￥4999起</p>
+        <img src="./img/img-phone3.png" alt="">
+      </div>
+    </div>
+    <div class="imgBox3">
+      <div>
+        <img src="./img/img-phone4.png" alt="">
+        <h2>魅族 18s</h2>
+        <p>高通骁龙 888+ | 162g轻巧手感</p>
+        <p><span>￥</span>3699<span>起</span></p>
+      </div>
+      <div>
+        <img src="./img/img-phone5.png" alt="">
+        <h2>魅族 18s Pro</h2>
+        <p>高通骁龙 888+ | AR全场景大师影像系统</p>
+        <p><span>￥</span>4599<span>起</span></p>
+      </div>
+      <div>
+        <img src="./img/img-phone6.png" alt="">
+        <h2>魅族 18X</h2>
+        <p>高通骁龙 870 | 10bit 120Hz AMOLED屏幕</p>
+        <p><span>￥</span>2599<span>起</span></p>
+      </div>
+      <div>
+        <img src="./img/img-phone7.png" alt="">
+        <h2>魅族 17 Pro 「乌金」</h2>
+        <p>限时领券立省1400+12期免息</p>
+        <p><span>￥</span>4299<span>起</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="pandaer">
+    <h1>PANDAER 奇趣探索</h1>
+    <div class="imgBox1"></div>
+    <div class="imgBox3">
+      <div>
+        <div>
+          <h3>PANDAER「龍」手机壳</h3>
+          <p>【附赠官方定制保护膜】魅族 17 / 18 系列适用</p>
+          <p><span>￥</span>69<span>起</span></p>
+        </div>
+      </div>
+      <div>
+        <img src="./img/img-pandaer3.png" alt="">
+        <h2>PANDAER「重塑」T 恤 · 起源</h2>
+        <p>100％ 新疆长绒棉 | Oversize版型 | 臂章BUFF</p>
+        <p><span>￥</span>129</p>
+      </div>
+      <div>
+        <img src="./img/img-pandaer4.png" alt="">
+        <h2>PANDAER「重塑」T 恤 · 希望</h2>
+        <p>Sorona 生物基纤维 | 丝滑柔软 | 透气抗皱</p>
+        <p><span>￥</span>159</p>
+      </div>
+      <div>
+        <img src="./img/img-pandaer5.png" alt="">
+        <h2>PANDAER「重塑」卫衣</h2>
+        <p>新疆长绒棉 | 连帽设计 | 双面亲肤</p>
+        <p><span>￥</span>199</p>
+      </div>
+    </div>
+    <div class="imgBox3">
+      <div>
+        <div>
+          <h3>PANDAER PC 磨砂壳</h3>
+          <p>附赠官方保护膜 |  18 周年定制</p>
+          <p><span>￥</span>69 <span style="text-decoration: line-through;color: white;font-weight: bold">￥89</span></p>
+        </div>
+      </div>
+      <div>
+        <img src="./img/img-pandaer7.png" alt="">
+        <h2>PANDAER「重塑」钥匙扣</h2>
+        <p>立体造型 | 重塑系列 | 腕带便携</p>
+        <p><span>￥</span>49</p>
+      </div>
+      <div>
+        <img src="./img/img-pandaer8.jpg" alt="">
+        <h2>PANDAER「重塑」徽章</h2>
+        <p>磁石吸附力 | 重塑系列 | 极限御锈力</p>
+        <p><span>￥</span>39<span>起</span></p>
+      </div>
+      <div>
+        <img src="./img/img-pandaer9.jpg" alt="">
+        <h2>魅族 18 系列 PANDAER「重塑」手机壳</h2>
+        <p>魅族 18 系列全适配 | 细腻色彩 | 顺滑触感</p>
+        <p><span>￥</span>69</p>
+      </div>
+    </div>
+    <div class="imgBox3">
+      <div>
+        <div>
+          <h3>PANDAER「重塑」钥匙扣</h3>
+          <p>立体造型 | 重塑系列 | 腕带便携</p>
+          <p><span>￥</span>49</p>
+        </div>
+      </div>
+      <div>
+        <img src="./img/img-pandaer11.jpg" alt="">
+        <h2>PANDAER「果味特饮」手机壳</h2>
+        <p>附赠官方保护膜 | 半透果冻设计</p>
+        <p><span>￥</span>69</p>
+      </div>
+      <div>
+        <img src="./img/img-pandaer12.jpg" alt="">
+        <h2>PANDAER 侠意手机壳</h2>
+        <p>附赠官方保护膜 | 半透明材质</p>
+        <p><span>￥</span>69<span>起</span></p>
+      </div>
+      <div>
+        <img src="./img/img-pandaer13.jpg" alt="">
+        <h2>PANDAER「果味特饮」手机壳 for iPhone</h2>
+        <p>iPhone 12 / 12 Pro适用 | 半透果冻设计</p>
+        <p><span>￥</span>69</p>
+      </div>
+    </div>
+    <div class="imgBox3">
+      <div>
+        <div>
+          <h3>FLYME 九周年纪念 T 恤</h3>
+          <p>【限时特惠99元】100％ 新疆长绒棉</p>
+          <p><span>￥</span>99<span style="text-decoration: line-through;color: white;font-weight: bold">￥129</span></p>
+        </div>
+      </div>
+      <div>
+        <img src="./img/img-pandaer15.jpg" alt="">
+        <h2>PANDAER「重塑」斜挎包</h2>
+        <p>进口杜邦 Cordura 面料 | YKK 拉链和扣具</p>
+        <p><span>￥</span>199</p>
+      </div>
+      <div>
+        <img src="./img/img-pandaer16.jpg" alt="">
+        <h2>闪极 118W 可视移动电源</h2>
+        <p>PANDAER X SHARGE | 20000mAh 持久续航</p>
+        <p><span>￥</span>699</p>
+      </div>
+      <div>
+        <img src="./img/img-pandaer17.png" alt="">
+        <h2>超触感透明机械键盘</h2>
+        <p>PANDAER X SHARGE | F 区倾斜设计 80 键布局</p>
+        <p><span>￥</span>699</p>
+      </div>
+    </div>
+  </div>
+  <div class="sound">
+    <h1>魅族声学</h1>
+    <div class="imgBox1"></div>
+    <div class="imgBox3">
+      <div>
+        <div>
+          <h3>魅族 HD60 头戴式蓝牙耳机</h3>
+          <p>【限时特惠329元+3期免息】</p>
+          <p><span>￥</span>499</p>
+        </div>
+      </div>
+      <div>
+        <img src="./img/img-sound3.png" alt="">
+        <h2>魅蓝 HiFi 解码耳放</h2>
+        <p>独立 DAC 解码芯片 | 600 欧姆高阻抗负载</p>
+        <p><span>￥</span>79</p>
+      </div>
+      <div>
+        <img src="./img/img-sound4.png" alt="">
+        <h2>魅蓝 Blus 主动降噪耳机</h2>
+        <p>12mm超大动圈30dB品质级主动降噪30h长续航</p>
+        <p><span>￥</span>199</p>
+      </div>
+      <div>
+        <img src="./img/img-sound5.png" alt="">
+        <h2>魅族 POP2s 真无线耳机</h2>
+        <p>【限时特惠199元+3期免息】</p>
+        <p><span>￥</span>199<span>￥299</span></p>
+      </div>
+    </div>
+    <div class="imgBox3">
+      <div>
+        <div>
+          <h3>魅族 HIFI 解码耳放</h3>
+          <p>高性能DAC芯片 纯净HiFi音质 600Ω高阻抗推力</p>
+          <p><span>￥</span>169</p>
+        </div>
+      </div>
+      <div>
+        <img src="./img/img-sound7.png" alt="">
+        <h2>魅族 HD60 降噪耳机</h2>
+        <p>【限时特惠799元+12期免息】</p>
+        <p><span>￥</span>799<span>￥1099</span></p>
+      </div>
+      <div>
+        <img src="./img/img-sound8.png" alt="">
+        <h2>魅族 HD60 头戴式蓝牙耳机</h2>
+        <p>【限时特惠329元+3期免息】</p>
+        <p><span>￥</span>499</p>
+      </div>
+      <div>
+        <img src="./img/img-sound9.png" alt="">
+        <h2>魅族 HALO 激光蓝牙耳机</h2>
+        <p>炫酷夜跑神器 随性张扬</p>
+        <p><span>￥</span>499<span>￥999</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="Lipro">
+    <h1>Lipro智能家居</h1>
+    <div class="imgBox1"></div>
+    <div class="imgBox3">
+      <div>
+        <div>
+          <h3>魅族 Lipro LED 橱柜灯</h3>
+          <p>【3期免息】全场景灵活补光 无感操控 悬停调光</p>
+          <p><span>￥</span>169</p>
+        </div>
+      </div>
+      <div>
+        <img src="./img/img-Lipro3.png" alt="">
+        <h2>魅族 Lipro LED 智能吸顶灯</h2>
+        <p>【3期免息】2cm 超薄灯体</p>
+        <p><span>￥</span>799</p>
+      </div>
+      <div>
+        <img src="./img/img-Lipro4.png" alt="">
+        <h2>Lipro LED 智能感应灯</h2>
+        <p>专业级光源 | 旗舰级续航 | 自动感应+手扫调光</p>
+        <p><span>￥</span>149</p>
+      </div>
+      <div>
+        <img src="./img/img-Lipro5.png" alt="">
+        <h2>魅族 Lipro LED 橱柜灯</h2>
+        <p>【3期免息】全场景灵活补光 无感操控 悬停调光</p>
+        <p><span>￥</span>199<span>￥179</span></p>
+      </div>
+    </div>
+    <div class="imgBox3">
+      <div>
+        <div>
+          <h3>魅族 Lipro LED 灯泡</h3>
+          <p>博物馆级健康光 RG0舒适低蓝光</p>
+          <p><span>￥</span>44</p>
+        </div>
+      </div>
+      <div>
+        <img src="./img/img-Lipro7.png" alt="">
+        <h2>魅族 Lipro LED 筒灯「标准版」</h2>
+        <p>【3期免息】Ra97 高色彩还原</p>
+        <p><span>￥</span>99</p>
+      </div>
+      <div>
+        <img src="./img/img-Lipro8.png" alt="">
+        <h2>Lipro LED 射灯 标准版</h2>
+        <p>【3期免息】双向角度可调</p>
+        <p><span>￥</span>129</p>
+      </div>
+      <div>
+        <img src="./img/img-Lipro9.png" alt="">
+        <h2>Lipro LED 射灯 可控硅调光版</h2>
+        <p>【3期免息】可控硅调光</p>
+        <p><span>￥</span>299</p>
+      </div>
+
+    </div>
+    <div class="imgBox3">
+      <div>
+        <div>
+          <h3>魅族 Lipro LED 智能吸顶灯</h3>
+          <p>【3期免息】Ra97高色彩还原</p>
+          <p><span>￥</span>499</p>
+        </div>
+      </div>
+      <div>
+        <img src="./img/img-Lipro11.png" alt="">
+        <h2>Lipro LED 金属球泡 低压版</h2>
+        <p>如然之光 护眼好光</p>
+        <p><span>￥</span>69</p>
+      </div>
+      <div>
+        <img src="./img/img-Lipro12.png" alt="">
+        <h2>Lipro LED 灯杯</h2>
+        <p>Ra97 高显色 | 超长寿命</p>
+        <p><span>￥</span>49</p>
+      </div>
+      <div>
+        <img src="./img/img-Lipro13.png" alt="">
+        <h2>魅族 Lipro LED 灯带</h2>
+        <p>博物馆级健康光 | 无可见频闪</p>
+        <p><span>￥</span>999</p>
+      </div>
+
+    </div>
+    <div class="imgBox3">
+      <div>
+        <div>
+          <h3>魅族 Lipro LED 筒灯「调光版」</h3>
+          <p>【3期免息】可控硅调光</p>
+          <p><span>￥</span>269</p>
+        </div>
+      </div>
+      <div>
+        <img src="./img/img-Lipro15.png" alt="">
+        <h2>魅族 Lipro LED 地脚灯</h2>
+        <p>博物馆级健康光 | 主动式雷达检测</p>
+        <p><span>￥</span>99</p>
+      </div>
+      <div>
+        <img src="./img/img-Lipro16.png" alt="">
+        <h2>魅族 Lipro 可控硅无极调光面板</h2>
+        <p>前、后切式可控硅调光</p>
+        <p><span>￥</span>199</p>
+      </div>
+      <div>
+        <img src="./img/img-Lipro17.png" alt="">
+        <h2>魅族 Lipro 智能蓝牙控制器</h2>
+        <p>支持调光、调色 | 蓝牙连接</p>
+        <p><span>￥</span>89</p>
+      </div>
+
+    </div>
+  </div>
+  <div class="around">
+    <h1>周边配件</h1>
+    <div class="imgBox1"></div>
+    <div class="imgBox3">
+      <div>
+        <div>
+          <h3>魅族 Lipro LED 橱柜灯</h3>
+          <p>【3期免息】全场景灵活补光 无感操控 悬停调光</p>
+          <p><span>￥</span>169</p>
+        </div>
+      </div>
+      <div>
+        <img src="./img/img-around3.png" alt="">
+        <h2>魅族 Lipro LED 智能吸顶灯</h2>
+        <p>【3期免息】2cm 超薄灯体</p>
+        <p><span>￥</span>799</p>
+      </div>
+      <div>
+        <img src="./img/img-around4.png" alt="">
+        <h2>Lipro LED 智能感应灯</h2>
+        <p>专业级光源 | 旗舰级续航 | 自动感应+手扫调光</p>
+        <p><span>￥</span>149</p>
+      </div>
+      <div>
+        <img src="./img/img-around5.png" alt="">
+        <h2>魅族 Lipro LED 橱柜灯</h2>
+        <p>【3期免息】全场景灵活补光 无感操控 悬停调光</p>
+        <p><span>￥</span>199<span>￥179</span></p>
+      </div>
+    </div>
+    <div class="imgBox3">
+      <div>
+        <div>
+          <h3>魅族 Lipro LED 灯泡</h3>
+          <p>博物馆级健康光 RG0舒适低蓝光</p>
+          <p><span>￥</span>44</p>
+        </div>
+      </div>
+      <div>
+        <img src="./img/img-around7.png" alt="">
+        <h2>魅族 Lipro LED 筒灯「标准版」</h2>
+        <p>【3期免息】Ra97 高色彩还原</p>
+        <p><span>￥</span>99</p>
+      </div>
+      <div>
+        <img src="./img/img-around8.jpg" alt="">
+        <h2>Lipro LED 射灯 标准版</h2>
+        <p>【3期免息】双向角度可调</p>
+        <p><span>￥</span>129</p>
+      </div>
+      <div>
+        <img src="./img/img-around9.jpg" alt="">
+        <h2>Lipro LED 射灯 可控硅调光版</h2>
+        <p>【3期免息】可控硅调光</p>
+        <p><span>￥</span>299</p>
+      </div>
+
+    </div>
+    <div class="imgBox3">
+      <div>
+        <div>
+          <h3>魅族 Lipro LED 智能吸顶灯</h3>
+          <p>【3期免息】Ra97高色彩还原</p>
+          <p><span>￥</span>499</p>
+        </div>
+      </div>
+      <div>
+        <img src="./img/img-around11.png" alt="">
+        <h2>Lipro LED 金属球泡 低压版</h2>
+        <p>如然之光 护眼好光</p>
+        <p><span>￥</span>69</p>
+      </div>
+      <div>
+        <img src="./img/img-around12.png" alt="">
+        <h2>Lipro LED 灯杯</h2>
+        <p>Ra97 高显色 | 超长寿命</p>
+        <p><span>￥</span>49</p>
+      </div>
+      <div>
+        <img src="./img/img-around13.png" alt="">
+        <h2>魅族 Lipro LED 灯带</h2>
+        <p>博物馆级健康光 | 无可见频闪</p>
+        <p><span>￥</span>999</p>
+      </div>
+
+    </div>
+    <div class="imgBox3">
+      <div>
+        <div>
+          <h3>魅族 Lipro LED 筒灯「调光版」</h3>
+          <p>【3期免息】可控硅调光</p>
+          <p><span>￥</span>269</p>
+        </div>
+      </div>
+      <div>
+        <img src="./img/img-around15.png" alt="">
+        <h2>魅族 Lipro LED 地脚灯</h2>
+        <p>博物馆级健康光 | 主动式雷达检测</p>
+        <p><span>￥</span>99</p>
+      </div>
+      <div>
+        <img src="./img/img-around16.png" alt="">
+        <h2>魅族 Lipro 可控硅无极调光面板</h2>
+        <p>前、后切式可控硅调光</p>
+        <p><span>￥</span>199</p>
+      </div>
+      <div>
+        <img src="./img/img-around17.jpg" alt="">
+        <h2>魅族 Lipro 智能蓝牙控制器</h2>
+        <p>支持调光、调色 | 蓝牙连接</p>
+        <p><span>￥</span>89</p>
+      </div>
+
+    </div>
+  </div>
+  <div class="hotpost">
+    <h1>热区热帖</h1>
+    <div class="imgBox3">
+      <div class="imgbox4">
+        <img src="img/h1.png" alt="">
+        <img src="img/t1.jfif" alt="">
+        <h2>醉刘的摄影师</h2>
+        <p>魅族 18ro |银河秘境图赏</p>
+        <p>魅族 18pro</p>
+      </div>
+
+      <div class="imgbox4">
+        <img src="img/h2.png" alt="">
+        <img src="img/t2.jfif" alt="">
+        <h2>一緲拉面</h2>
+        <p>魅族 18ro |飞雪留光图赏</p>
+        <p>魅族 18pro</p>
+      </div>
+
+      <div class="imgbox4">
+        <img src="img/h3.png" alt="">
+        <img src="img/t3.jfif" alt="">
+        <h2>醉刘的摄影师</h2>
+        <p>魅族 18 |踏雪图赏</p>
+        <p>魅族 18</p>
+      </div>
+
+      <div class="imgbox4">
+        <img src="img/h4.png" alt="">
+        <img src="img/t4.jfif" alt="">
+        <h2>醉刘的摄影师</h2>
+        <p>魅族 18|渡海图赏</p>
+        <p>魅族 18</p>
+      </div>
+    </div>
+    <div class="imgBox3">
+      <div class="imgbox4">
+        <img src="img/h5.png" alt="">
+        <img src="img/t1.jfif" alt="">
+        <h2>醉刘的摄影师</h2>
+        <p>魅族 18ro |银河秘境图赏</p>
+        <p>魅族 18pro</p>
+      </div>
+
+      <div class="imgbox4">
+        <img src="img/h6.png" alt="">
+        <img src="img/t2.jfif" alt="">
+        <h2>一緲拉面</h2>
+        <p>魅族 18ro |飞雪留光图赏</p>
+        <p>魅族 18pro</p>
+      </div>
+
+      <div class="imgbox4">
+        <img src="img/h7.png" alt="">
+        <img src="img/t3.jfif" alt="">
+        <h2>醉刘的摄影师</h2>
+        <p>魅族 18 |踏雪图赏</p>
+        <p>魅族 18</p>
+      </div>
+
+      <div class="imgbox4">
+        <img src="img/h8.png" alt="">
+        <img src="img/t4.jfif" alt="">
+        <h2>醉刘的摄影师</h2>
+        <p>魅族 18|渡海图赏</p>
+        <p>魅族 18</p>
+      </div>
+    </div>
+  </div>
+  <div class="flyme">
+    <h1>Flyme</h1>
+    <div class="imgBox3">
+      <div class="imgbox4" id="imgbox31">
+        <img src="img/f1.png" alt="">
+      </div>
+      <div class="imgbox4">
+        <img src="img/f2.jpg" alt="">
+        <h2>Flyme隐私安全白皮书</h2>
+      </div>
+      <div class="imgbox4">
+        <img src="img/f3.jpg" alt="">
+        <h2>Flyme隐私安全白皮书</h2>
+      </div>
+    </div>
+
+    <div class="imgBox3">
+      <div class="imgbox4">
+        <img src="img/f4.png" alt="">
+        <h2>Flyme隐私安全白皮书</h2>
+      </div>
+      <div class="imgbox4">
+        <img src="img/f5.png" alt="">
+        <h2>Flyme隐私安全白皮书</h2>
+      </div>
+      <div class="imgbox4">
+        <img src="img/f6.jpg" alt="">
+        <h2>Flyme隐私安全白皮书</h2>
+      </div>
+      <div class="imgbox4">
+        <img src="img/f7.jpg" alt="">
+        <h2>Flyme隐私安全白皮书</h2>
+      </div>
+    </div>
+  </div>
+  <div class="video">
+    <h1>精彩视频</h1>
+    <div class="imgBox3">
+      <div class="imgbox4">
+        <img src="img/s1.jpg" alt="">
+        <h2>魅族   18X</h2>
+      </div>
+      <div class="imgbox4">
+        <img src="img/s2.jpg" alt="">
+        <h2>魅族   18     Pro</h2>
+      </div>
+      <div class="imgbox4">
+        <img src="img/s3.jpg" alt="">
+        <h2>魅族   18</h2>
+      </div>
+      <div class="imgbox4">
+        <img src="img/s4.jpg" alt="">
+        <h2>Flyme隐私安全白皮书</h2>
+      </div>
+    </div>
+    <div class="imgBox3">
+      <div class="imgbox4">
+        <img src="img/s5.jpg" alt="">
+        <h2>Flyme隐私安全白皮书</h2>
+      </div>
+      <div class="imgbox4">
+        <img src="img/s6.jpg" alt="">
+        <h2>Flyme 8概念视频</h2>
+      </div>
+      <div class="imgbox4">
+        <img src="img/s7.jpg" alt="">
+        <h2>Aicy</h2>
+      </div>
+      <div class="imgbox4">
+        <img src="img/s8.jpg" alt="">
+        <h2>安全家庭</h2>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="heart">
+      <p>周一至周日 8:00-20:00</p>
+      <div>
+        <div>
+          <a><img src="./img/icon/img-icon1.png" alt=""><span>满80免运费</span></a>
+          <a><img src="./img/icon/img-icon2.png" alt=""><span>100+城市次日送达</span></a>
+          <a><img src="./img/icon/img-icon3.png" alt=""><span>7天无理由退货</span></a>
+          <a><img src="./img/icon/img-icon4.png" alt=""><span>15天换货保障</span></a>
+          <a><img src="./img/icon/img-icon5.png" alt=""><span>1年免费保修</span></a>
+          <a><img src="./img/icon/img-icon6.png" alt=""><span>上门快修</span></a>
+        </div>
+        <div>
+<!--          -->
+          <p>400-788-3333</p>
+          <button>在线客服</button>
+        </div>
+      </div>
+      <hr>
+      <ul>
+        <li><a href="">了解魅族</a></li>
+        <li><a href="">加入我们</a></li>
+        <li><a href="">联系我们</a></li>
+        <li><a href="">天猫旗舰店</a></li>
+        <li><a href="">问题反馈</a></li>
+        <li><a href="">线上销售授权名单公示</a></li>
+        <li><a href="">出版物经营许可证</a></li>
+        <li><a href="">涉未成年人网络有害信息举报(12377)</a></li>
+        <li><a href="">网络违法违规人员举报</a></li>
+        <li><a href="">简体中文</a></li>
+      </ul>
+      <ul class="second">
+        <li>©2021 Meizu Telecom Equipment Co., Ltd. All rights reserved.</li>
+        <li><a href="">粤ICP备13003602号</a></li>
+        <li><a href="">合字B2-20170010 </a></li>
+        <li><a href="">营业执照</a></li>
+        <li><a href="">法律声明</a></li>
+        <li><a href=""><img src="" alt=""><span>粤公网安备 44049102496009 号</span></a></li>
+      </ul>
+      <div class="last">
+        <ul>
+          <li><img src="./img/icon/code1.png" alt=""></li>
+          <li><img src="./img/icon/code2.jpg" alt=""></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="backTop" id="backTop"></div>
+</body>
+<script src="./js/index.js"></script>
+<script src="./js/utils.js"></script>
+<script src="./js/banner.js"></script>
+<script src="./js/UserList.js"></script>
+</html>
