@@ -55,3 +55,7 @@ a,span{
     background-color: #fff;
     margin: 0 30px;
 }
+.help-block{
+    color: red!important;
+    display: none;
+}
