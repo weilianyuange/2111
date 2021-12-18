@@ -37,8 +37,7 @@ password.onblur = function(){
 submit.onclick = function(){
     let uname = user.value;
     let pwd = password.value;
-    if(!uname){
-    }else if(!pwd){
+    if(!uname&&!pwd){
     }else{
         for(let i = 0; i < jsonObj.length; i++){
             if(uname==jsonObj[i]['name']&&pwd==jsonObj[i]['psw']){
