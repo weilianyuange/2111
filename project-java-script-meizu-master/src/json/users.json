@@ -1,0 +1,19 @@
+{
+  "name": [
+    {
+      "id": 1,
+      "user": "15223679114",
+      "psw": "passadmin"
+    },
+    {
+      "id": 2,
+      "user": "12345678902",
+      "psw": "root"
+    },
+    {
+      "user": "15223679114",
+      "password": "qwertyuiop",
+      "id": 3
+    }
+  ]
+}
