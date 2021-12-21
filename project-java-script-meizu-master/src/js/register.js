@@ -10,19 +10,18 @@ users.onblur = async function(){
         this.parentNode.querySelector('span').remove();
     }
     let span = document.createElement('span');
-    let name = await axios.get('http://localhost:3000/name?user=${users.value}')
+    let name = await axios.get(`http://localhost:3000/name?user=${users.value}`)
     .then(data=>{
         if(data.data.length == 0) return true;
         if(data.data.length == 1) return false;
     })
     console.log(name);
-
-    if(/^1[3-9]\d{9}$/.test(users.value) && name) {
+    if(/^1[3-9]\d{9}$/.test(users.value) && !name) {
+        span.innerHTML = '手机号已经被注册';
+        span.style.color = 'red';
+    }else if(/^1[3-9]\d{9}$/.test(users.value) && name){
         span.innerHTML = '手机号可用';
         span.style.color = 'yellowgreen';
-    }else if(/^1[3-9]\d{9}$/.test(users.value) && !name){
-        span.innerHTML = '手机号已被注册';
-        span.style.color = 'red';
     }else if(!/^1[3-9]\d{9}$/.test(users.value) && name){
         span.innerHTML = '手机号输入错误';
         span.style.color = 'red';
@@ -72,8 +71,8 @@ submit.onclick = function(){
         }).then((data)=>{
             console.log(data)
         });
-        alert("注册成功，请点击登录")
+        alert('注册成功，请点击登录')
     }else{
         alert('请输入正确的注册信息')
     }
-}
+}   
