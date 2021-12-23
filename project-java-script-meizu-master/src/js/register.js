@@ -71,7 +71,8 @@ submit.onclick = function(){
         }).then((data)=>{
             console.log(data)
         });
-        alert('注册成功，请点击登录')
+        alert('注册成功，请登录')
+        window.open('login.html')
     }else{
         alert('请输入正确的注册信息')
     }

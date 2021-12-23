@@ -1,5 +1,5 @@
 //请求数据
-const script = $('<script src="https://dms-dataapi.meizu.com/data/jsdata.jsonp?callback=dataBack&blockIds=266"></script>')
+let script = $('<script src="https://dms-dataapi.meizu.com/data/jsdata.jsonp?callback=dataBack&blockIds=266"></script>')
 //插入script
 $('body').append(script)
 //删除script
@@ -8,15 +8,14 @@ let datas1
 let informationData = []
 //读取localstorage的购物车数据，存入二维数组informationData中
 function setInformationData(){
-    for(let i = 0;i < localStorage.length;i++){
+    for(let i = 0;i < localStorage.length;i++){        //定义二维数组的一维长度为3
         informationData[i] = []
     }
     if (localStorage.length){
         for(let n = 0;n < localStorage.length; n++){
             let keys = localStorage.key(n)
-            // console.log(keys);
-            informationData[n][0] = keys//skuid
-            informationData[n][1] = parseInt(window.localStorage.getItem(keys))//数量
+            informationData[n][0] = keys
+            informationData[n][1] = parseInt(window.localStorage.getItem(keys))
         }
     }
     //使用datas1数据中对应的索引替换information中的每一个skuid
